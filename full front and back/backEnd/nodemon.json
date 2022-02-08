@@ -1,0 +1,10 @@
+{
+    "watch": [
+        "index.js",
+        "Routes/",
+        "src/",
+        "frontPages/",
+        "python/"
+    ],
+    "ext": "js, css, html, py"
+}
