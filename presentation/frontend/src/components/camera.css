@@ -1,0 +1,70 @@
+.capture{
+    height: 70px;
+    width:70px;
+    border-radius: 5000px;
+    align-self: center;
+    justify-self: center;
+}
+
+.capture.shot{
+    background-color:white;
+    border:2px solid rgb(146, 21, 21);
+    box-shadow: 0 0 0px 4px dodgerblue, 0 0 10px 5px white;
+    transition: box-shadow 0.3s ease-in-out
+}
+.capture.shot:hover{
+    box-shadow: 0 0 0px 7px dodgerblue, 0 0 20px 5px rgb(204, 11, 11);
+}
+.capture.shot:active{
+    box-shadow: 0 0 0px 9px dodgerblue, 0 0 20px 15px rgb(204, 11, 11);
+}
+.capture.cancel{
+    display:block;
+    display: grid;
+    font-size:150%;
+    place-items: center;
+    background-color: tomato;
+    color:red;
+    transition:box-shadow 0.3s, transform 0.3s;
+}
+.capture.capture:hover{
+    box-shadow: 0 0 0px 7px dodgerblue, 0 0 20px 5px rgb(204, 11, 11);
+    transform: rotate(45deg);
+    filter:brightness(120%)
+}
+.block{
+    display: grid;
+    height: 70px;
+    width:70px;
+    border:2px solid red;
+    margin:3px;
+    place-items: center;
+    border-radius: 5000px;
+    margin:auto;
+}
+.tick{
+    background-color:rgba(0, 204, 255, 0.548);
+    transition:all 0.3s ease;
+}
+.tick:hover,.tick:active{
+    background-color:transparent;
+    box-shadow: 0 0 0px 7px dodgerblue, 0 0 20px 5px rgb(204, 11, 11);
+}
+.cross{
+    background-color:tomato
+}
+#canvas{
+    border:2px solid green;
+}
+#VideoWrapper::before{
+    content: "";
+    position:absolute;
+    display: block;
+    height: 13%;
+    width:13%;
+    border:2px solid black;
+    background-color: rgba(0,0,0,0.7);
+}
+.test{
+    color:rgba(255, 0, 0, 0.678)
+}

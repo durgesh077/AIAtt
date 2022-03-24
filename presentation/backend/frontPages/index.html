@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action ="/files" method ="post" enctype="multipart/form-data" >
+            <input type="file" id="photo1" name="photo1" onchange="upload(this)"/>
+            <!--<input type="file" name="photo2" />-->
+            <input type="text" name="text" />
+            <button type="submit">Submit</button>
+        </form>
+        <script >
+
+            let reader=new FileReader()
+            reader.onloadend=async ()=>{
+                let file = document.getElementById("photo1").files[0]
+                let fd=new FormData()
+                fd.append("img",reader.result)
+                fd.append("name",file.name)
+                let res=await fetch("/base64",{
+                    method:"POST",
+                    body:fd
+                })
+                res=await res.text()
+            }
+            function  upload(target) {
+                let file=document.getElementById("photo1").files[0]
+                reader.readAsDataURL(file)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+.dataModal{
+        background-color:blue;
+        height:400px;
+        width: min(400px,80vw);
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index:1000;
+        transition:all 1s;
+        border-radius: 10px;
+        border:8px ridge navy;
+        display:none;
+}
