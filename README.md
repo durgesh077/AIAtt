@@ -21,8 +21,10 @@ this web application is written in reactJs for frontend, nodeJs or backend and p
   <caption>
     Some training images
   </caption>
-<img src="trainingImages/priyaP.jpeg"  alt="not found" height="250px">
-  <img src="trainingImages/handA.png"  alt="not found" height="250px">
+<img src="trainingImages/priyaP.jpeg"  alt="not found" height="250px"> | <img src="trainingImages/handA.png"  alt="not found" height="250px">
+  <img src="viPic/cols.jpeg"  alt="not found" height="250px"> | <img src="viPic/grid.jpeg"  alt="not found" height="250px">
+  <img src="viPic/training.jpeg"  alt="not found" height="250px">
   </figures
  
- 
+  <video src="/viPic/shots.mp4" width="180" />
+
