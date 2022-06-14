@@ -26,5 +26,5 @@ this web application is written in reactJs for frontend, nodeJs or backend and p
   <img src="viPic/training.jpeg"  alt="not found" height="250px">
   </figures
  
-  <video src="/viPic/shots.mp4" width="180" />
+  <video src="viPic/shots.mp4" width="180" />
 
