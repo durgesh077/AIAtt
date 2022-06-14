@@ -26,5 +26,8 @@ this web application is written in reactJs for frontend, nodeJs or backend and p
   <img src="viPic/training.jpeg"  alt="not found" height="250px">
   </figures
  
-  <video src="viPic/shots.mp4" width="180" />
+
+
+
+https://user-images.githubusercontent.com/66236446/173692150-abc6a4d3-3997-45de-8a15-808b29e25040.mp4
 
